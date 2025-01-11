@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="height=device-height,initial-scale=1.0">
+
+    <!-- 链接css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+    <!-- 网页标题 -->
+    <title>Blazing Heart</title>
+</head>
+<body>   
+    <video src="./res/Blazing Heart.mp3"></video>
+
+    <div id="lyricContainer">
+        <div id="lyric">
+            <b id="lyric_en"></b>
+            <br/>
+            <b id="lyric_zh"></b>
+        </div>
+    </div>
+    
+    <canvas id="spectrum"></canvas>
+
+    <div id="toolbar">
+        <input type="file" id="selectMusic" accept="audio/*,video/*">
+        <label for="selectMusic">
+            <img src="res/icons/音乐.svg" style="margin-left: 20px;"></img>
+            选择视频/音频
+        </label>
+
+        <input type="file" id="selectLyric" accept=".lrc">
+        <label for="selectLyric">
+            <img src="res/icons/歌词.svg" style="margin-left: 20px;"></img>
+            选择歌词
+        </label>
+
+        <input type="file" id="selectMask" accept="image/*">
+        <label for="selectMask">
+            <img src="res/icons/mask.svg" style="margin-left: 20px;"></img>
+            选择背景图遮罩
+        </label>
+
+        <label id="play">
+            <img src="res/icons/播放.svg" style="margin-left: 20px;"></img>
+            播放(空格键)
+        </label>
+    </div>
+</body>
+<script src="js/main.js"></script>
+</html>
